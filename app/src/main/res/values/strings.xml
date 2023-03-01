@@ -1,6 +1,20 @@
 <resources>
-    <string name="app_name">MyFirstApp</string>
-    <string name="message">HELLO RAFAEL!</string>
-    <string name="weight">Digite seu peso aqui</string>
-    <string name="height">Digite sua altura aqui</string>
+    <string name="app_name">My BMI</string>
+    <string name="weight">Enter your weight here</string>
+    <string name="height">Enter your height here</string>
+    <string name="classification">"Classification: %1$s"</string>
+    <string name="txt_table_head">BMI CLASSIFICATION</string>
+    <string name="txt_rate_under_weight">LESS THAN 18,5</string>
+    <string name="txt_under_weight">UNDERWEIGHT</string>
+    <string name="txt_rate_normal">BETWEEN 18,5 AND 24,9</string>
+    <string name="txt_normal">NORMAL</string>
+    <string name="txt_rate_overweight">BETWEEN 25,0 AND 29,9</string>
+    <string name="txt_overweight">OVERWEIGHT</string>
+    <string name="txt_rate_obesity">BETWEEN 30,0 AND 39,9</string>
+    <string name="txt_obesity">OBESITY</string>
+    <string name="txt_rate_severe_obesity">MORE THAN 40,0</string>
+    <string name="txt_severe_obesity">SEVERE OBESITY</string>
+    <string name="fields_not_empty">All fields must be filled</string>
+    <string name="btn_calculate">Calculate</string>
+    <string name="txt_label_bmi_result">Your BMI is:</string>
 </resources>

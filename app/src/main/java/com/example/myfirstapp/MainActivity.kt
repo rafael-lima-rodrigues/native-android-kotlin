@@ -1,11 +1,11 @@
 package com.example.myfirstapp
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,21 +15,23 @@ class MainActivity : AppCompatActivity() {
         val btnCalculate: Button = findViewById<Button>(R.id.btnCalculate)
         val edtWeight: EditText = findViewById<EditText>(R.id.edtWeight)
         val edtHeight: EditText = findViewById<EditText>(R.id.edtHeight)
-        var tvResult = findViewById<TextView>(R.id.txtResult)
 
         btnCalculate.setOnClickListener {
-            val altura: Float = edtHeight.text.toString().toFloat()
-            val peso: Float = edtWeight.text.toString().toFloat()
 
-            val result = peso / (altura * altura)
-            tvResult.text = result.toString()
-            println("RESULTADO = " + result)
+            if (edtHeight.text.toString().isEmpty() && edtWeight.text.toString().isEmpty()){
+                Toast.makeText(this, getString(R.string.fields_not_empty), Toast.LENGTH_LONG).show();
+            } else{
+                val height: Float = edtHeight.text.toString().toFloat()
+                val weight: Float = edtWeight.text.toString().toFloat()
 
-            val intent = Intent(this, ResultActivity::class.java)
-                .apply {
-                    putExtra("EXTRA_RESULT", result)
-                }
-            startActivity(intent)
+                val result = weight / (height * height)
+
+                val intent = Intent(this, ResultActivity::class.java)
+                    .apply {
+                        putExtra("EXTRA_RESULT", result)
+                    }
+                startActivity(intent)
+            }
         }
     }
 }

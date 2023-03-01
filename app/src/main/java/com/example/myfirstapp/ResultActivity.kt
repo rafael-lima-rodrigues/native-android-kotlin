@@ -1,13 +1,17 @@
 package com.example.myfirstapp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 
 class ResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
+
+        supportActionBar?.setHomeButtonEnabled(true);
+        supportActionBar?.setDisplayHomeAsUpEnabled(true);
 
         val tvResult = findViewById<TextView>(R.id.textview_result)
         val tvClassification = findViewById<TextView>(R.id.textview_classification)
@@ -16,12 +20,17 @@ class ResultActivity : AppCompatActivity() {
 
         tvResult.text = result.toString()
 
-        var classification = if (result <18.5f) "ABAIXO DO PESO"
-        else if(result in 18.5f..24.9f) "NORMAL"
-        else if(result in 25f..29.9f) "SOBREPESO"
-        else if(result in 30f..39.9f) "OBESIDADE"
-        else "OBESIDADE GRAVE"
+        val classification = if (result <18.5f) getString(R.string.txt_under_weight)
+        else if(result in 18.5f..24.9f) getString(R.string.txt_normal)
+        else if(result in 25f..29.9f) getString(R.string.txt_overweight)
+        else if(result in 30f..39.9f) getString(R.string.txt_obesity)
+        else getString(R.string.txt_severe_obesity)
 
-        tvClassification.text = classification
+        tvClassification.text = getString(R.string.classification, classification)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        finish();
+        return super.onOptionsItemSelected(item)
     }
 }

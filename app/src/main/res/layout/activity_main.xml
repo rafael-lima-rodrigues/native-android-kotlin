@@ -11,7 +11,7 @@
     <EditText
         android:id="@+id/edtWeight"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:hint="@string/weight"
         android:inputType="numberDecimal"
         android:maxLength="6"
@@ -22,19 +22,18 @@
         android:layout_marginTop="16dp"
         android:id="@+id/edtHeight"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:hint="@string/height"
         android:inputType="numberDecimal"
         android:layout_below="@+id/edtWeight"
         />
-    <TextView
-        android:id="@+id/txtResult"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_width="wrap_content"
+
+    <ImageView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/message"
-        android:textSize="30sp" />
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="150dp"
+        android:src="@drawable/imc"/>
 
     <Button
         android:id="@+id/btnCalculate"
@@ -42,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="Click"
+        android:text="@string/btn_calculate"
 
         />
 
