@@ -10,8 +10,8 @@ class ResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
 
-        supportActionBar?.setHomeButtonEnabled(true);
-        supportActionBar?.setDisplayHomeAsUpEnabled(true);
+        supportActionBar?.setHomeButtonEnabled(true)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         val tvResult = findViewById<TextView>(R.id.textview_result)
         val tvClassification = findViewById<TextView>(R.id.textview_classification)
@@ -30,7 +30,7 @@ class ResultActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        finish();
+        finish()
         return super.onOptionsItemSelected(item)
     }
 }

@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         btnCalculate.setOnClickListener {
 
             if (edtHeight.text.toString().isEmpty() && edtWeight.text.toString().isEmpty()){
-                Toast.makeText(this, getString(R.string.fields_not_empty), Toast.LENGTH_LONG).show();
+                Toast.makeText(this, getString(R.string.fields_not_empty), Toast.LENGTH_LONG).show()
             } else{
                 val height: Float = edtHeight.text.toString().toFloat()
                 val weight: Float = edtWeight.text.toString().toFloat()
