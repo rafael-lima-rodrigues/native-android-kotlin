@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        supportActionBar?.setBackgroundDrawable(getDrawable(R.drawable.action_bar_bg))
 
         val btnCalculate: Button = findViewById<Button>(R.id.btnCalculate)
         val edtWeight: EditText = findViewById<EditText>(R.id.edtWeight)

@@ -12,6 +12,8 @@ class ResultActivity : AppCompatActivity() {
 
         supportActionBar?.setHomeButtonEnabled(true)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setBackgroundDrawable(getDrawable(R.drawable.action_bar_bg))
+
 
         val tvResult = findViewById<TextView>(R.id.textview_result)
         val tvClassification = findViewById<TextView>(R.id.textview_classification)

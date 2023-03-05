@@ -4,11 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-   android:orientation="vertical"
+    android:orientation="vertical"
+    android:background="@color/gradient_light_end_color"
     tools:context=".ResultActivity">
 
     <TextView
-        android:textColor="@color/purple_700"
+        android:textColor="@color/gradient_start_color"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -25,7 +26,7 @@
         android:layout_height="wrap_content"
         android:textSize="38sp"
         android:textStyle="bold"
-        android:textColor="@color/purple_700"
+        android:textColor="@color/gradient_start_color"
         tools:text="27.00000"
         />
 
@@ -35,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:textSize="18sp"
-        android:textColor="@color/purple_700"
+        android:textColor="@color/gradient_start_color"
         android:textAlignment="center"
         tools:text="@string/classification"
         />
@@ -43,7 +44,7 @@
             <TextView
                 android:singleLine="true"
                 android:textSize="20dp"
-                android:textColor="@color/purple_700"
+                android:textColor="@color/gradient_start_color"
                 android:layout_marginTop="50dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -61,7 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="10dp"
-            android:background="@color/purple_700">
+            android:background="@color/gradient_start_color">
             <TextView
                 android:textColor="@color/white"
                 android:layout_width="match_parent"
@@ -74,24 +75,26 @@
                 android:text="@string/txt_under_weight"/>
         </TableRow>
         <TableRow
-            android:background="@color/purple_100"
+            android:background="@color/gradient_light_end_color"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="10dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/gradient_start_color"
                 android:text="@string/txt_rate_normal"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/gradient_start_color"
                 android:text="@string/txt_normal"/>
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="10dp"
-            android:background="@color/purple_700">
+            android:background="@color/gradient_start_color">
             <TextView
                 android:textColor="@color/white"
                 android:layout_width="match_parent"
@@ -104,21 +107,23 @@
                 android:text="@string/txt_overweight"/>
         </TableRow>
         <TableRow
-            android:background="@color/purple_100"
+            android:background="@color/gradient_light_end_color"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="10dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/gradient_start_color"
                 android:text="@string/txt_rate_obesity"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/gradient_start_color"
                 android:text="@string/txt_obesity"/>
         </TableRow>
         <TableRow
-            android:background="@color/purple_700"
+            android:background="@color/gradient_start_color"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="10dp">

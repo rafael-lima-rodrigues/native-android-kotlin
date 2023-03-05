@@ -8,4 +8,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="gradient_start_color">#067707</color>
+    <color name="gradient_light_start_color">#55B85F</color>
+    <color name="gradient_end_color">#36B542</color>
+    <color name="gradient_light_end_color">#AAE6B0</color>
 </resources>
