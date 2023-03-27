@@ -12,4 +12,5 @@
     <color name="gradient_light_start_color">#55B85F</color>
     <color name="gradient_end_color">#36B542</color>
     <color name="gradient_light_end_color">#AAE6B0</color>
+    <color name="green_light">#D0F3C7</color>
 </resources>

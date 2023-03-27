@@ -2,7 +2,7 @@
     <string name="app_name">BMI Calculator</string>
     <string name="weight">Enter your weight here</string>
     <string name="height">Enter your height here</string>
-    <string name="classification">"Classification: %1$s"</string>
+    <string name="classification">"Your Classification is: %1$s"</string>
     <string name="txt_table_head">BMI CLASSIFICATION</string>
     <string name="txt_rate_under_weight">LESS THAN 18,5</string>
     <string name="txt_under_weight">UNDERWEIGHT</string>
@@ -17,4 +17,7 @@
     <string name="fields_not_empty">All fields must be filled</string>
     <string name="btn_calculate">Calculate</string>
     <string name="txt_label_bmi_result">Your BMI is:</string>
+    <string name="name">Enter your name</string>
+    <string name="name_result">Hi %1$s</string>
+    <string name="result_age">Your age is: %1$s</string>
 </resources>

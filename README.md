@@ -9,12 +9,15 @@ BMI Calcualtor is the App I developed as Android Native. This App was dveloped d
 * Kotlin
 * Activity to host screens
 * ViewGroup
-    * RelativeLayout
-    * LinearLayout
+    * ConstraintLayout
+    * AppBarLayout
 - UI Components
-    - TextView
-    - EditText
-    - Button
+  - ScrowView
+  - TextView 
+  - CardView
+  - TableLayout
+  - EditText
+  - Button
 - Toast to display messages
 - Explicit Intent to open the second Activity
 - FindViewById to recover UI components
